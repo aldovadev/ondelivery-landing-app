@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/src/app/navbar/navbar.component.css">
+<link rel="stylesheet" href="/src/app/navbar/navbar.component.scss">
 
 <!-- Navigation -->
 
@@ -6,7 +6,7 @@
     <div class="nav-container">
         <div class="left-nav">
             <li class="logo">
-                <a href="/home"><img src="../../assets/images/logo-white.png" alt=""></a>
+                <a href="/#home"><img src="../../assets/images/logo-white.png" alt=""></a>
             </li>
         </div>
         <div class="right-nav">
@@ -14,11 +14,11 @@
                 <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
             </li>
             <li class="menu" [class.is-open]="isMenuOpen">
-                <a href="/home" class="menu-item">HOME</a>
-                <a href="/about" class="menu-item">TENTANG KAMI</a>
-                <a href="/partner" class="menu-item">PARTNER</a>
-                <a href="/kontak" class="menu-item">KONTAK</a>
-                <a href="/privacy-policy" class="menu-item">INFORMASI</a>
+                <a href="/#home" class="menu-item">HOME</a>
+                <a href="/#about" class="menu-item">TENTANG KAMI</a>
+                <a href="/#partner" class="menu-item">PARTNER</a>
+                <a href="/#kontak" class="menu-item">KONTAK</a>
+                <a href="/#privacy-policy" class="menu-item">INFORMASI</a>
             </li>
         </div>
     </div>

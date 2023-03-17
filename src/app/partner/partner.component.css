@@ -21,6 +21,7 @@
     color: white;
     font-size: 40px;
     padding-left: 0px;
+    text-align: center;
 }
 
 .title-container ol {
@@ -37,6 +38,7 @@
 
 .title-container ol p {
     color: white;
+    text-align: center;
     font-size: 14px;
     margin-top: 1px; 
     margin-left: 5px; 

@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     max-width: 3000px;
-    height: 350px;
+    max-height: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,6 +20,7 @@
 .title-container h1 {
     color: white;
     font-size: 40px;
+    text-align: center;
 }
 
 .title-container ol {
@@ -41,24 +42,6 @@
     font-weight: 500;
 }
 
-#service-area {
-    max-width: 3000px;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-    padding: 70px 0px;
-}
-
-.sa-container {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-}
-
 .sa-row {
     display: flex;
     flex-direction: row;
@@ -75,11 +58,13 @@
     }
 
 .sa-left h2 {
-    padding-left: 24px;
+    padding: 0px 24px;
 }
 
 .sa-left div{
-    padding: 0px 24px;
+    padding: 0px 24px; 
+    text-align: justify;
+    
     }
 
 .sa-right {
@@ -93,5 +78,42 @@
     }
 
 .sa-right div img{
-    max-width: 500px;
+    max-width: 100%;
     }
+
+
+#social-area {
+    max-width: 3000px;
+    max-height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 70px 70px;
+}
+    
+.text-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 16px;
+}
+
+.text-container ul {
+    text-align: center;
+    margin: 0px 0px 24px;
+    padding: 0px 16px;
+}
+
+.text-container h2 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.text-container li {
+    text-align: justify;
+    margin: 15px 0px;
+}
+    

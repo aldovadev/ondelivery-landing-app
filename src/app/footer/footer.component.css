@@ -1,86 +1,165 @@
+.fb-container{
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 3000px;
+    max-height: 2000px;
+    margin: auto;
+}
+
 /* Footer Top */
 #footer-top {
     display: block;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     max-width: 3000px;
-    height: 321px;
+    max-height: 2000px;
     margin: auto;
-    padding: 8px 0px 48px;
     background: linear-gradient(-47deg, #02428c 0%, #3e7fc0 100%);
 }
 
 .ft-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 50px 0px;
-    max-width: 1140px;
-    height: 317px;
+    justify-content: center;
+    max-width: 1400px;
+    max-height: 2000px;
     margin: auto;
-    padding: 4px 0px 48px;
 }
 
 .ft-row {
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 317px;
-    margin-top: 50px;
-}
-
-.alamat-con, .telp-con, .mail-con {
+    max-width: 3000px;
+    max-height: 3000px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
+.informasi{
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 15px;
+}
+
+.pemisah{
+margin-top: 30px;
+}
+
+.layanan{
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 15px;
+}
+
+.perusahaan{
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 15px;
+}
+
+.sosmed{
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 15px;
+}
+
+.sosmed h3 {
+    margin-left: 10px;
+}
+
+.sosmed a {
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.sosmed img {
+    width: 150px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+.alamat-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.alamat-con i{
+    margin-right: 10px;
+}
+
+.telp-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.telp-con i{
+    margin-right: 10px;
+}
+
+.mail-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.mail-con i{
+    margin-right: 10px;
+}
+
+
 .ft-row h3 {
-    margin: 0px 0px 20px;
-    padding:  0px 0px 16px;
     color: #ffffff;
 }
 
-ul {
+.layanan ul {
     padding-left: 0px;
 }
 
-.ft-row li, a{
+.informasi ul {
+    padding-left: 0px;
+}
+
+.alamat-con div p{
     margin: 0px;
-    padding:  4px 0px;
+}
+
+.telp-con p{
+    margin: 0;
+}
+
+.ft-row li, a{
     list-style-type: none;
     text-decoration: none;
     color: #ffffff;
 }
 
-.ft-row span{
-    padding: 4px 0px;
-    margin-right: 8px;
-}
-
-.ft-row p{
-    margin: 0px;
-    padding: 4px 0px;
-}
-
-.pemisah {
-    margin: 0px;
-    padding: 48px 0px 4px;
-}
-
-.ft-row img {
-    margin-right: 10px;
-    width: 120px;
-    cursor: pointer;
-}
 
 /* Footer Bottom */
 #footer-bottom {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content:flex-start;
     max-width: 3000px;
-    height: 70px;
+    max-height: 3000px;
     margin: auto;
     background: linear-gradient(-47deg, #02428c 0%, #3e7fc0 100%);
 }
@@ -88,14 +167,13 @@ ul {
 .fb-container {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    max-width: 1140px;
-    margin: auto;
+    justify-content: flex-start;
+    max-width: 1300px;
+    max-height: 1300px;
 }
 
 .fb-container p {
-    justify-content: first baseline;
+    justify-content: left;
     font-size: 14px;
     color: white;
-
 }

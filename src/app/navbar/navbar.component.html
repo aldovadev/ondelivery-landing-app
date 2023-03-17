@@ -1,24 +1,25 @@
 <link rel="stylesheet" href="/src/app/navbar/navbar.component.css">
 
 <!-- Navigation -->
-<header id="navbar">
-    <nav >
-        <a href="/home">
-            <img src="../../assets/images/logo-white.png" alt="logo">
-        </a>
-        <div class="navigation">
-            <ul>
-                <li><a href="/about">Tentang kami</a></li>
-                <li><a href="/privacy-policy">Informasi</a></li>
-                <li><a href="/partner">Partner</a></li>
-                <li><a href="/kontak">Kontak</a></li> 
-                <li>
-                    <div>
-                        <img src="../../assets/images/idn.png" alt="">
-                        <p>IDN</p>
-                    </div>
-                </li>
-            </ul>
+
+<nav id="navbar">
+    <div class="nav-container">
+        <div class="left-nav">
+            <li class="logo">
+                <a href="/home"><img src="../../assets/images/logo-white.png" alt=""></a>
+            </li>
         </div>
-    </nav>
-</header>
+        <div class="right-nav">
+            <li class="burger" (click)="toggleMenu()">
+                <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+            </li>
+            <li class="menu" [class.is-open]="isMenuOpen">
+                <a href="/home" class="menu-item">HOME</a>
+                <a href="/about" class="menu-item">TENTANG KAMI</a>
+                <a href="/partner" class="menu-item">PARTNER</a>
+                <a href="/kontak" class="menu-item">KONTAK</a>
+                <a href="/privacy-policy" class="menu-item">INFORMASI</a>
+            </li>
+        </div>
+    </div>
+</nav>

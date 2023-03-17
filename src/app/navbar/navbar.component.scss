@@ -1,0 +1,98 @@
+
+$menuHeight: 60px;
+$menuBreakpoint: 768px;
+
+#navbar {
+    max-width: 3000px;
+    background: linear-gradient(-47deg, #02428c 0%, #3e7fc0 100%);
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+
+    .left-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    .right-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-container {
+        width: 100%;
+        margin: 0 30px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    li {
+        list-style: none;
+        color: white;
+        text-align: right;
+    }
+
+
+    .logo {
+        img {
+            width: 150px;
+            height: 40px;
+        }
+    }
+
+    .burger {
+        padding: 0 10px;
+        border-left: 1px solid #eee;
+        display: none;
+        cursor: pointer;
+
+        i {
+        color: white;
+        line-height: $menuHeight;
+        }
+
+        @media (max-width: $menuBreakpoint) {
+        display: block;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: right;
+ 
+        @media (max-width: $menuBreakpoint) {
+        display: none;
+
+            &.is-open {
+                display: block;
+                position: absolute;
+                top: #{$menuHeight + 2};
+                background: #fff;
+                width: 300px;
+
+                .menu-item {
+                color: black;
+                border-bottom: 1px solid #cccccc;
+                text-align: center;
+                }
+            }
+        }
+
+        .menu-item {
+        padding: 0 10px;
+        height: $menuHeight;
+        line-height: $menuHeight;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: white;
+        }
+    }
+}

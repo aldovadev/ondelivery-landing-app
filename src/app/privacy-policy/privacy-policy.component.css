@@ -21,6 +21,7 @@
     color: white;
     font-size: 40px;
     padding-left: 0px;
+    text-align: center;
 }
 
 .title-container ol {
@@ -42,3 +43,56 @@
     margin-left: 5px; 
     font-weight: 500;
 }
+
+#blog-area {
+    background-size: cover;
+    background-position: center;
+    max-width: 3000px;
+    max-height: 10000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.ba-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    max-width: 840px;
+    max-height: 10000px;
+}
+
+.ba-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    max-width: 840px;
+    max-height: 10000px;
+}
+
+.meta-info {
+    max-width: 840px;
+    max-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+li {
+    text-align: justify;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
